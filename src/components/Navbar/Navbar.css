@@ -1,0 +1,150 @@
+/* Navbar Container */
+.navbar {
+    /* background-color: rgb(8, 8, 185) !important; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav.sticky-nav.navbar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: white !important;
+    color: rgb(8,21,40) !important;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 0 10px #33333367;
+}
+
+/* Navbar Logo */
+.navbar-logo>img {
+    /* width: 150px; */
+    max-width: 250px;
+    height: 60px !important;
+    /* color: white; */
+    /* background-color: white; */
+    filter: contrast(200%);
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-item {
+    position: relative;
+    font-size: 18px;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    transition: color 0.3s ease;
+    align-items: center;
+    position: relative;
+}
+
+/* Active Navbar Item */
+.navbar-item.active a {
+    /* color: #42a5f5; */
+    color: black;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    width: 240px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block !important;
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.navbar-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.dropdown-menu li {
+    margin-bottom: 8px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Hover Underline Effect */
+.navbar-item a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    background-color: #42a5f5;
+    /* Underline color */
+    transition: width 0.5s ease;
+}
+.navbar-item.active .dropdown a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    background-color: #42a5f5;
+    /* Underline color */
+    transition: width 0.5s ease;
+}
+
+.navbar-item.active a:hover:after {
+    width: 100%;
+}
+
+.navbar-item:hover a::after {
+    width: 100%;
+}
+
+.navbar-item:hover a{
+    text-decoration: none;
+}
+.navbar-item .dropdown a{
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.anchor-color{
+    color: black !important;
+}
+.anchor-color1{
+    color: black !important;
+}
+.navbar-data > li > a {
+color: black !important;
+}

@@ -1,0 +1,42 @@
+.ntwist{
+    width: 100%;
+    height: 100vh !important;
+    background-image: url(../../assets/home-image-bg-v6.png);
+    background-repeat: no-repeat;
+}
+
+.bg-nav{
+    background-image: url(../../assets/home-image-bg-v6.png);
+    background-repeat: no-repeat;
+}
+
+
+.ntwist-main{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.ntwistdiv{
+    width: 80% ;
+    margin:50px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+     padding: 150px 0px 150px 0px;
+     align-items: center;
+     align-content: center;
+     color: white !important;
+     text-align: left;
+}
+
+.ntwistdiv>div{
+    width: 50%;
+}
+
+.ntwistdiv>div:nth-child(1){
+    width: 40%;
+    font-size: 21px;
+}
+
+.ntwistdiv>div>img{
+    width: 100%;
+}
